@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const http = require('http');
 const { MongoClient } = require('mongodb');
+const httpPort=4035;
 
 const getFileContentType = (filePath) => {
   const extName = path.extname(filePath);
@@ -91,4 +92,4 @@ http.createServer((req, res) => {
       }
     });
   }
-}).listen(5000, () => console.log('Server running...'));
+}).listen(httpPort, () => console.log('Server running...'));
