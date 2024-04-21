@@ -5,3 +5,7 @@ functions = "netlify/functions"
 [dev]
 command = "npm run dev"
 
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
