@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const http = require('http');
 const { MongoClient } = require('mongodb');
-const httpPort= process.env.PORT || 4035;
+const httpPort= 8080;
 
 const getFileContentType = (filePath) => {
   const extName = path.extname(filePath);
