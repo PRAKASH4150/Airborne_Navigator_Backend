@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const http = require('http');
 const { MongoClient } = require('mongodb');
-const httpPort=4035;
+const httpPort= process.env.PORT || 4035;
 
 const getFileContentType = (filePath) => {
   const extName = path.extname(filePath);
@@ -68,7 +68,7 @@ http.createServer((req, res) => {
   if (req.url === '/api') {
     const content = establishDBConnection();
     content.then((bookDetails) => {
-      res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
+      res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Access-Control-Allow-Methods', 'GET');
       res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
       res.writeHead(200, { 'Content-Type': 'application/json' });
