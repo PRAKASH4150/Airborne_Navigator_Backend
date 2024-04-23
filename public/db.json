@@ -66,5 +66,20 @@
     "gateNo":2,
     "status":"On Time",
     "URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-eUt5tXs-K3ZJ1VTijcEBtqB6HBKJxvxNoR0c0G2yKg&s"
+  },
+  {
+    "flightNo":3791,
+    "airlineName":"Air India",
+    "aircraftType":"Boeing 747",
+    "source":"Irving,TX",
+    "destination":"Hyderabad,India",
+    "etd":"01:30",
+    "eta":"17:30",
+    "duration":"15hr 45mins",
+    "gateNo":9,
+    "status":"Delayed",
+    "URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55v2g9kCAg8aXI9UpmTRcnwmgTCBd-Zd7GWWztPUopQ&s"
   }
   ]}
+
+  
